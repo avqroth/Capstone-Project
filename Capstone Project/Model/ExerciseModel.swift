@@ -16,7 +16,7 @@ class ExerciseModel: Codable, ObservableObject, Identifiable {
 }
 
 class ExerciseEntry: Codable, Identifiable {
-    let id: Int?
+    var id: Int?
     let name: String
     let type: String
     let muscle: String

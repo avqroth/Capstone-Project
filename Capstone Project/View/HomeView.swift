@@ -11,10 +11,13 @@ struct HomeView: View {
     
     
     var body: some View {
-        NavigationView() {
-            ScrollView {
-                SearchExerciseLibrary()
-            }
+        TabView {
+            Text("Home")
+                .tabItem {
+                    Image(systemName: "1.house")
+                    Text("Tab 1")
+                }
+                .tag(0)
         }
     }
 }
@@ -22,6 +25,5 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-        SearchExerciseLibrary()
     }
 }

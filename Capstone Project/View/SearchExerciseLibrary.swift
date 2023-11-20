@@ -29,7 +29,7 @@ struct SearchExerciseLibrary: View {
                         }
                     }
                 ScrollView {
-                    ForEach(exerciseStore.exercises) { exercise in
+                        ForEach(exerciseStore.exercises, id: \.id) { exercise in
                             NavigationLink(destination: ExerciseDetailView(exercise: exercise)) {
                                 Text(exercise.name)
                                     .padding()
