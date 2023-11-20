@@ -8,16 +8,16 @@
 import Foundation
 
 
-class ExerciseModel: Codable, ObservableObject {
+class ExerciseModel: Codable, ObservableObject, Identifiable {
     var id: UUID = UUID()
     let count: Int
-    let entries: [ExerciseEntries]
+    let exercises: [ExerciseEntry]
     
 }
 
-class ExerciseEntries: Codable, Identifiable, ObservableObject {
-    var id: Int
-    var name: String
+class ExerciseEntry: Codable, Identifiable {
+    let id: Int?
+    let name: String
     let type: String
     let muscle: String
     let equipment: String

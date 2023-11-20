@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ExerciseDetailView: View {
-    let entry: ExerciseEntries
-    let exerciseModel: ExerciseModel
+    let exercise: ExerciseEntry
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Name: \(exercise.name)")
+            .padding()
+        Text("Type: \(exercise.type)")
+            .padding()
+        Text("Muscle: \(exercise.muscle)")
+            .padding()
+        Text("Equipment: \(exercise.equipment)")
+            .padding()
+        Text("Difficulty: \(exercise.difficulty)")
+            .padding()
+        Text("Instructions: \(exercise.instructions)")
     }
 }
 
