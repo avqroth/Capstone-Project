@@ -32,5 +32,15 @@ class ExerciseEntry: Codable, Identifiable {
         case difficulty = "Difficulty"
         case instructions = "Instructions"
     }
-    
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decodeIfPresent(Int.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.type = try container.decode(String.self, forKey: .type)
+        self.muscle = try container.decode(String.self, forKey: .muscle)
+        self.equipment = try container.decode(String.self, forKey: .equipment)
+        self.difficulty = try container.decode(String.self, forKey: .difficulty)
+        self.instructions = try container.decode(String.self, forKey: .instructions)
+    }
 }

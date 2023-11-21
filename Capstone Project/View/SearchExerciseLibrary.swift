@@ -14,37 +14,41 @@ struct SearchExerciseLibrary: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Search Exercises", text: $searchText)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .onSubmit {
-                        Task {
-                            do {
-                                try await exerciseStore.searchExercises(name: nil, type: nil, muscle: searchText, equipment: nil, difficulty: nil, instructions: nil)
-                                print("Fectched Data: \(exerciseStore.exercises)")
-                            }
-                            catch {
-                                print("Error fetching data: \(error)")
+                HStack {
+                    TextField("Search Exercises", text: $searchText)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 8)
+                        .background(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
+                        .onSubmit {
+                            
+                            print("Submit tapped")
+                            Task {
+                                do {
+                                    try await exerciseStore.searchExercises(name: nil, type: nil, muscle: searchText, equipment: nil, difficulty: nil, instructions: nil)
+                                    print("Fectched Data: \(exerciseStore.exercises)")
+                                }
+                                catch {
+                                    print("Error fetching data: \(error)")
+                                }
                             }
                         }
-                    }
-                ScrollView {
-                        ForEach(exerciseStore.exercises, id: \.id) { exercise in
-                            NavigationLink(destination: ExerciseDetailView(exercise: exercise)) {
-                                Text(exercise.name)
-                                    .padding()
-                        }
+                    
+                        .padding()
+                        .background(Color.white)
+                }
+                List(exerciseStore.exercises.indices, id: \.self) { index in
+                    NavigationLink(destination: ExerciseDetailView(exercise: exerciseStore.exercises[index])) {
+                        Image(systemName: "dumbbell")
+                        Text(exerciseStore.exercises[index].name)
+                            .padding()
                     }
                 }
+                .listStyle(.sidebar)
             }
-            .navigationTitle("Search Exercises")
+            .navigationTitle("Exercise Library")
         }
     }
 }
 
-struct SearchExerciseLibrary_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchExerciseLibrary()
-    }
-}
 
