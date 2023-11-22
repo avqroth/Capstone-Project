@@ -14,48 +14,80 @@ struct ExerciseDetailView: View {
         ScrollView {
             ZStack {
                 RectangleView()
-                HStack {
-                    Image(systemName: "figure.strengthtraining.traditional")
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .padding(2)
+                VStack {
+                    HStack {
+                        Image(systemName: "trophy")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
 
-                    Text("\(exercise.name)")
-                        .foregroundColor(.white)
-                        .font(.custom("HelveticaNeue.ultralight", size: 20))
-                        .padding()
-                }
-            }
-            .padding()
-            ZStack {
-                RectangleView()
-                HStack {
-                    Image(systemName: "figure.stand")
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .padding(2)
-                    
-                    Text("\(exercise.muscle)")
-                        .foregroundColor(.white)
-                        .font(.custom("HelveticaNeue.ultralight", size: 20))
-                        .padding()
-                }
-            }
-            .padding()
-            ZStack {
-                RectangleView()
-                HStack {
-                    Image(systemName: "dumbbell.fill")
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .padding(2)
+                        Text("DIFFICULTY:   \(exercise.difficulty)")
+                            .foregroundColor(.white)
+                            .font(.custom("HelveticaNeue.ultralight", size: 15))
+                            .padding()
+                    }
+                    HStack {
+                        Image(systemName: "figure.strengthtraining.traditional")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
 
-                    Text("\(exercise.equipment)")
-                        .foregroundColor(.white)
-                        .font(.custom("HelveticaNeue.ultralight", size: 20))
-                        .padding()
+                        Text("TYPE:   \(exercise.type)")
+                            .foregroundColor(.white)
+                            .font(.custom("HelveticaNeue.ultralight", size: 15))
+                            .padding()
+                    }
+                    HStack {
+                        Image(systemName: "dumbbell.fill")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
+
+                        Text("EQUIPMENT USED:   \(exercise.equipment)")
+                            .foregroundColor(.white)
+                            .font(.custom("HelveticaNeue.ultralight", size: 15))
+                            .padding()
+                    }
+                    HStack {
+                        Image(systemName: "figure.mixed.cardio")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
+
+                        Text("MUSCLE GROUP:   \(exercise.muscle)")
+                            .foregroundColor(.white)
+                            .font(.custom("HelveticaNeue.ultralight", size: 15))
+                            .padding()
+                    }
+
                 }
             }
+//            .padding()
+//            ZStack {
+//                RectangleView()
+//                HStack {
+//                    Image(systemName: "figure.stand")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 30))
+//                        .padding(2)
+//
+//                    Text("\(exercise.muscle)")
+//                        .foregroundColor(.white)
+//                        .font(.custom("HelveticaNeue.ultralight", size: 20))
+//                        .padding()
+//                }
+//            }
+//            .padding()
+//            ZStack {
+//                RectangleView()
+//                HStack {
+//                    Image(systemName: "dumbbell.fill")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 30))
+//                        .padding(2)
+//
+//                    Text("\(exercise.equipment)")
+//                        .foregroundColor(.white)
+//                        .font(.custom("HelveticaNeue.ultralight", size: 20))
+//                        .padding()
+//                }
+//            }
         }
     }
 }
@@ -66,8 +98,8 @@ struct RectangleView: View {
     var body: some View {
         Rectangle()
             .foregroundColor(mainColor)
-            .frame(width: 350, height: 75)
-            .cornerRadius(10)
+            .frame(width: 350, height: 400)
+            .cornerRadius(20)
     }
 }
 
