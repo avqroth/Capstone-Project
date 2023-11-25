@@ -9,97 +9,70 @@ import SwiftUI
 
 struct ExerciseDetailView: View {
     let exercise: ExerciseEntry
-
+    let mainColor = Color("MainColor")
+    let detailsColor = Color("DetailsColor")
+    
     var body: some View {
         ScrollView {
+            Image(systemName: "dumbbell")
+                .foregroundColor(mainColor)
+                .font(.system(size: 150))
+                .padding()
+            Text("\(exercise.name)")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(detailsColor)
+                    .font(.custom("Avenir.bold", size: 30))
+                    .padding()
+            ZStack {
+                RectangleView()
+                VStack(alignment: .center) {
+                    Label(exercise.difficulty, systemImage: "trophy")
+                        .foregroundColor(detailsColor)
+                        .font(.custom("Avenir.bold", size: 20))
+                        .padding(20)
+                    Label(exercise.type, systemImage: "figure.strengthtraining.traditional")
+                        .foregroundColor(detailsColor)
+                        .font(.custom("Avenir.bold", size: 20))
+                        .padding(20)
+                    Label(exercise.equipment, systemImage: "dumbbell")
+                        .foregroundColor(detailsColor)
+                        .font(.custom("Avenir.bold", size: 20))
+                        .padding(20)
+                    Label(exercise.muscle, systemImage: "figure.stand")
+                        .foregroundColor(detailsColor)
+                        .font(.custom("Avenir.bold", size: 20))
+                        .padding(20)
+                }
+            } .padding()
+            
             ZStack {
                 RectangleView()
                 VStack {
-                    HStack {
-                        Image(systemName: "trophy")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15))
-
-                        Text("DIFFICULTY:   \(exercise.difficulty)")
-                            .foregroundColor(.white)
-                            .font(.custom("HelveticaNeue.ultralight", size: 15))
-                            .padding()
-                    }
-                    HStack {
-                        Image(systemName: "figure.strengthtraining.traditional")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15))
-
-                        Text("TYPE:   \(exercise.type)")
-                            .foregroundColor(.white)
-                            .font(.custom("HelveticaNeue.ultralight", size: 15))
-                            .padding()
-                    }
-                    HStack {
-                        Image(systemName: "dumbbell.fill")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15))
-
-                        Text("EQUIPMENT USED:   \(exercise.equipment)")
-                            .foregroundColor(.white)
-                            .font(.custom("HelveticaNeue.ultralight", size: 15))
-                            .padding()
-                    }
-                    HStack {
-                        Image(systemName: "figure.mixed.cardio")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15))
-
-                        Text("MUSCLE GROUP:   \(exercise.muscle)")
-                            .foregroundColor(.white)
-                            .font(.custom("HelveticaNeue.ultralight", size: 15))
-                            .padding()
-                    }
-
-                }
+                    Label("Instruction", systemImage: "tray.full")
+                        .foregroundColor(detailsColor)
+                        .font(.custom("Avenir.bold", size: 20))
+                        .padding(.top)
+                    Text("\(exercise.instructions)")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                        .font(.custom("Avenir", size: 18))
+                        .padding(30)
+                    
+                    
+                } .padding(.all)
             }
-//            .padding()
-//            ZStack {
-//                RectangleView()
-//                HStack {
-//                    Image(systemName: "figure.stand")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 30))
-//                        .padding(2)
-//
-//                    Text("\(exercise.muscle)")
-//                        .foregroundColor(.white)
-//                        .font(.custom("HelveticaNeue.ultralight", size: 20))
-//                        .padding()
-//                }
-//            }
-//            .padding()
-//            ZStack {
-//                RectangleView()
-//                HStack {
-//                    Image(systemName: "dumbbell.fill")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 30))
-//                        .padding(2)
-//
-//                    Text("\(exercise.equipment)")
-//                        .foregroundColor(.white)
-//                        .font(.custom("HelveticaNeue.ultralight", size: 20))
-//                        .padding()
-//                }
-//            }
         }
     }
 }
 
 struct RectangleView: View {
     let mainColor = Color("MainColor")
-
+    
     var body: some View {
         Rectangle()
             .foregroundColor(mainColor)
-            .frame(width: 350, height: 400)
-            .cornerRadius(20)
+            .frame(width: 350, height: .infinity)
+            .cornerRadius(50)
     }
 }
 
@@ -108,17 +81,85 @@ struct RectangleView: View {
 
 
 
-//        Text("Name: \(exercise.name)")
-//            .padding()
-//        Text("Type: \(exercise.type)")
-//            .padding()
-//        Text("Muscle: \(exercise.muscle)")
-//            .padding()
-//        Text("Equipment: \(exercise.equipment)")
-//            .padding()
-//        Text("Difficulty: \(exercise.difficulty)")
-//            .padding()
-//        Text("Instructions: \(exercise.instructions)")
+//struct ExerciseDetailView: View {
+//    let exercise: ExerciseEntry
+//    let mainColor = Color("MainColor")
+//
+//    var body: some View {
+//        ScrollView {
+//            ZStack {
+//                VStack {
+//                    Image(systemName: "dumbbell")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 50))
+//                        .padding()
+//                    HStack {
+//                        Image(systemName: "trophy")
+//                            .foregroundColor(.yellow)
+//                            .font(.system(size: 15))
+//
+//                        Text("\(exercise.difficulty)")
+//                            .foregroundColor(.yellow)
+//                            .font(.custom("Avenir.light", size: 15))
+//                            .padding()
+//                        RoundedRectangle(cornerRadius: 15)
+//                            .frame(width: 250, height: 100)
+//                            .foregroundColor(mainColor)
+//                    }
+//                    HStack {
+//                        Image(systemName: "figure.strengthtraining.traditional")
+//                            .foregroundColor(.white)
+//                            .font(.system(size: 15))
+//
+//                        Text("\(exercise.type)")
+//                            .foregroundColor(mainColor)
+//                            .font(.custom("Avenir.light", size: 15))
+//                            .padding()
+//                    }
+//                    HStack {
+//                        Image(systemName: "dumbbell")
+//                            .foregroundColor(.black)
+//                            .font(.system(size: 15))
+//
+//                        Text("\(exercise.equipment)")
+//                            .foregroundColor(mainColor)
+//                            .font(.custom("Avenir.light", size: 15))
+//                            .padding()
+//                    }
+//                    HStack {
+//                        Image(systemName: "figure.mixed.cardio")
+//                            .foregroundColor(.red)
+//                            .font(.system(size: 15))
+//
+//                        Text("\(exercise.muscle)")
+//                            .foregroundColor(mainColor)
+//                            .font(.custom("Avenir.light", size: 15))
+//                            .padding()
+//                    }
+//                    HStack {
+////                        Image(systemName: "figure.mixed.cardio")
+////                            .foregroundColor(.red)
+////                            .font(.system(size: 15))
+//
+//                        Text("\(exercise.instructions)")
+//                            .foregroundColor(mainColor)
+//                            .font(.custom("Avenir.light", size: 15))
+//                            .padding()
+//                    }
+//
+//                }
+//                .padding(40)
+//                .frame(maxHeight: .infinity)
+////                .background(
+////                    RoundedRectangle(cornerRadius: 10)
+////                        .foregroundColor(.gray)
+////                )
+//            }
+//        }
+//    }
+//}
+
+
 
 
 
