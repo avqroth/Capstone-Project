@@ -24,7 +24,7 @@ struct ExerciseDetailView: View {
                 .padding()
             Text("\(exercise.name)")
                     .multilineTextAlignment(.center)
-                    .foregroundColor(detailsColor)
+                    .foregroundColor(mainColor)
                     .font(.custom(detailFont, size: 30))
                     .padding()
             ZStack {
@@ -60,7 +60,7 @@ struct ExerciseDetailView: View {
                         .padding(.top)
                     Text("\(exercise.instructions)")
                         .multilineTextAlignment(.center)
-                        .foregroundColor(.white)
+                        .foregroundColor(detailsColor)
                         .font(.custom("Avenir", size: 18))
                         .padding(detailPadding)
                 } .padding(.all)

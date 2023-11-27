@@ -30,16 +30,13 @@ class ExerciseStore: ObservableObject {
         if let muscle = muscle {
             queryItems.append(URLQueryItem(name: "muscle", value: muscle))
         }
-        if let equipment = equipment {
-            queryItems.append(URLQueryItem(name: "equipment", value: equipment))
-        }
         if let difficulty = difficulty {
             queryItems.append(URLQueryItem(name: "difficulty", value: difficulty))
         }
         if let instructions = instructions {
             queryItems.append(URLQueryItem(name: "instructions", value: instructions))
         }
-                              
+
         request.url?.append(queryItems: queryItems)
         request.addValue(apiKey, forHTTPHeaderField: "X-Api-Key")
         
@@ -59,9 +56,9 @@ class ExerciseStore: ObservableObject {
         }
     }
 }
-    
-    
-    
+
+
+
 
 
 

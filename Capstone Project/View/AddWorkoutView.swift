@@ -15,6 +15,6 @@ struct AddWorkoutView: View {
 
 struct AddWorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AddWorkoutView()
     }
 }

@@ -11,31 +11,64 @@
 		855D055A2B03C7F800FF1CD9 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */; };
 		855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */; };
 		855D056A2B132C4E00FF1CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05692B132C4E00FF1CD9 /* HomeView.swift */; };
+		855D05822B14411800FF1CD9 /* Capstone_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */; };
 		858BFC8C2B0160690077F475 /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */; };
 		858BFC8E2B0160690077F475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8D2B0160690077F475 /* ContentView.swift */; };
 		858BFC902B0160710077F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BFC8F2B0160710077F475 /* Assets.xcassets */; };
 		858BFC932B0160710077F475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BFC922B0160710077F475 /* Preview Assets.xcassets */; };
 		85BD9ABF2B0164420072A846 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD9ABE2B0164420072A846 /* ExerciseModel.swift */; };
-		85BD9AC12B0164570072A846 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD9AC02B0164570072A846 /* CustomTabView.swift */; };
 		85BD9AC32B0164FF0072A846 /* ExerciseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD9AC22B0164FF0072A846 /* ExerciseStore.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		855D05752B143AF400FF1CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858BFC802B0160680077F475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 858BFC872B0160690077F475;
+			remoteInfo = "Capstone Project";
+		};
+		855D05832B14411800FF1CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858BFC802B0160680077F475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 858BFC872B0160690077F475;
+			remoteInfo = "Capstone Project";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExerciseLibrary.swift; sourceTree = "<group>"; };
 		855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		855D05692B132C4E00FF1CD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectTests.swift; sourceTree = "<group>"; };
 		858BFC882B0160690077F475 /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		858BFC8D2B0160690077F475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		858BFC8F2B0160710077F475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		858BFC922B0160710077F475 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85BD9ABE2B0164420072A846 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
-		85BD9AC02B0164570072A846 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		85BD9AC22B0164FF0072A846 /* ExerciseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		855D056C2B143AF400FF1CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855D057C2B14411800FF1CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		858BFC852B0160690077F475 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,13 +87,22 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		855D05802B14411800FF1CD9 /* Capstone ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */,
+			);
+			path = "Capstone ProjectTests";
+			sourceTree = "<group>";
+		};
 		858BFC7F2B0160680077F475 = {
 			isa = PBXGroup;
 			children = (
-				858BFC8A2B0160690077F475 /* CapStone App */,
-				855D055B2B03C81C00FF1CD9 /* Store */,
-				858BFC992B0162740077F475 /* Model */,
 				858BFC9A2B0162D30077F475 /* View */,
+				858BFC992B0162740077F475 /* Model */,
+				855D055B2B03C81C00FF1CD9 /* Store */,
+				858BFC8A2B0160690077F475 /* CapStone App */,
+				855D05802B14411800FF1CD9 /* Capstone ProjectTests */,
 				858BFC892B0160690077F475 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				858BFC882B0160690077F475 /* Capstone Project.app */,
+				855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */,
+				855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */,
-				858BFC8D2B0160690077F475 /* ContentView.swift */,
 				858BFC8F2B0160710077F475 /* Assets.xcassets */,
 				858BFC912B0160710077F475 /* Preview Content */,
 			);
@@ -103,8 +146,8 @@
 		858BFC9A2B0162D30077F475 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				858BFC8D2B0160690077F475 /* ContentView.swift */,
 				855D05692B132C4E00FF1CD9 /* HomeView.swift */,
-				85BD9AC02B0164570072A846 /* CustomTabView.swift */,
 				855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */,
 				855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */,
 				855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */,
@@ -115,6 +158,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		855D056E2B143AF400FF1CD9 /* Capstone ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855D05772B143AF400FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectUITests" */;
+			buildPhases = (
+				855D056B2B143AF400FF1CD9 /* Sources */,
+				855D056C2B143AF400FF1CD9 /* Frameworks */,
+				855D056D2B143AF400FF1CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855D05762B143AF400FF1CD9 /* PBXTargetDependency */,
+			);
+			name = "Capstone ProjectUITests";
+			productName = "Capstone ProjectUITests";
+			productReference = 855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		855D057E2B14411800FF1CD9 /* Capstone ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855D05852B14411800FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectTests" */;
+			buildPhases = (
+				855D057B2B14411800FF1CD9 /* Sources */,
+				855D057C2B14411800FF1CD9 /* Frameworks */,
+				855D057D2B14411800FF1CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855D05842B14411800FF1CD9 /* PBXTargetDependency */,
+			);
+			name = "Capstone ProjectTests";
+			productName = "Capstone ProjectTests";
+			productReference = 855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		858BFC872B0160690077F475 /* Capstone Project */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 858BFC962B0160710077F475 /* Build configuration list for PBXNativeTarget "Capstone Project" */;
@@ -143,6 +222,14 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					855D056E2B143AF400FF1CD9 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 858BFC872B0160690077F475;
+					};
+					855D057E2B14411800FF1CD9 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 858BFC872B0160690077F475;
+					};
 					858BFC872B0160690077F475 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -162,11 +249,27 @@
 			projectRoot = "";
 			targets = (
 				858BFC872B0160690077F475 /* Capstone Project */,
+				855D056E2B143AF400FF1CD9 /* Capstone ProjectUITests */,
+				855D057E2B14411800FF1CD9 /* Capstone ProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		855D056D2B143AF400FF1CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855D057D2B14411800FF1CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		858BFC862B0160690077F475 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +302,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		855D056B2B143AF400FF1CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855D057B2B14411800FF1CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855D05822B14411800FF1CD9 /* Capstone_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		858BFC842B0160690077F475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,7 +325,6 @@
 				85BD9AC32B0164FF0072A846 /* ExerciseStore.swift in Sources */,
 				855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */,
 				858BFC8E2B0160690077F475 /* ContentView.swift in Sources */,
-				85BD9AC12B0164570072A846 /* CustomTabView.swift in Sources */,
 				85BD9ABF2B0164420072A846 /* ExerciseModel.swift in Sources */,
 				855D05582B03C7E600FF1CD9 /* SearchExerciseLibrary.swift in Sources */,
 				855D055A2B03C7F800FF1CD9 /* AddWorkoutView.swift in Sources */,
@@ -217,7 +334,90 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		855D05762B143AF400FF1CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 858BFC872B0160690077F475 /* Capstone Project */;
+			targetProxy = 855D05752B143AF400FF1CD9 /* PBXContainerItemProxy */;
+		};
+		855D05842B14411800FF1CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 858BFC872B0160690077F475 /* Capstone Project */;
+			targetProxy = 855D05832B14411800FF1CD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		855D05782B143AF400FF1CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5QSZU8WS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Capstone Project";
+			};
+			name = Debug;
+		};
+		855D05792B143AF400FF1CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5QSZU8WS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Capstone Project";
+			};
+			name = Release;
+		};
+		855D05862B14411800FF1CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5QSZU8WS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone Project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone Project";
+			};
+			name = Debug;
+		};
+		855D05872B14411800FF1CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5QSZU8WS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone Project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone Project";
+			};
+			name = Release;
+		};
 		858BFC942B0160710077F475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -393,6 +593,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		855D05772B143AF400FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855D05782B143AF400FF1CD9 /* Debug */,
+				855D05792B143AF400FF1CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855D05852B14411800FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855D05862B14411800FF1CD9 /* Debug */,
+				855D05872B14411800FF1CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		858BFC832B0160680077F475 /* Build configuration list for PBXProject "Capstone Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
