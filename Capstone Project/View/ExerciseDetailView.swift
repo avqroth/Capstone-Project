@@ -13,7 +13,7 @@ struct ExerciseDetailView: View {
     let detailsColor = Color("DetailsColor")
 
     private let detailFontSize = Double(20.0)
-    private let detailFont = String("Avenir.bold")
+    private let detailFont = String("Avenir")
     private let detailPadding = Double(20.0)
 
     var body: some View {
@@ -26,6 +26,9 @@ struct ExerciseDetailView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(mainColor)
                     .font(.custom(detailFont, size: 30))
+                    .padding()
+                    .background(detailsColor)
+                    .cornerRadius(50)
                     .padding()
             ZStack {
                 RectangleView()
@@ -78,89 +81,6 @@ struct RectangleView: View {
             .cornerRadius(50)
     }
 }
-
-
-
-
-
-
-//struct ExerciseDetailView: View {
-//    let exercise: ExerciseEntry
-//    let mainColor = Color("MainColor")
-//
-//    var body: some View {
-//        ScrollView {
-//            ZStack {
-//                VStack {
-//                    Image(systemName: "dumbbell")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 50))
-//                        .padding()
-//                    HStack {
-//                        Image(systemName: "trophy")
-//                            .foregroundColor(.yellow)
-//                            .font(.system(size: 15))
-//
-//                        Text("\(exercise.difficulty)")
-//                            .foregroundColor(.yellow)
-//                            .font(.custom("Avenir.light", size: 15))
-//                            .padding()
-//                        RoundedRectangle(cornerRadius: 15)
-//                            .frame(width: 250, height: 100)
-//                            .foregroundColor(mainColor)
-//                    }
-//                    HStack {
-//                        Image(systemName: "figure.strengthtraining.traditional")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 15))
-//
-//                        Text("\(exercise.type)")
-//                            .foregroundColor(mainColor)
-//                            .font(.custom("Avenir.light", size: 15))
-//                            .padding()
-//                    }
-//                    HStack {
-//                        Image(systemName: "dumbbell")
-//                            .foregroundColor(.black)
-//                            .font(.system(size: 15))
-//
-//                        Text("\(exercise.equipment)")
-//                            .foregroundColor(mainColor)
-//                            .font(.custom("Avenir.light", size: 15))
-//                            .padding()
-//                    }
-//                    HStack {
-//                        Image(systemName: "figure.mixed.cardio")
-//                            .foregroundColor(.red)
-//                            .font(.system(size: 15))
-//
-//                        Text("\(exercise.muscle)")
-//                            .foregroundColor(mainColor)
-//                            .font(.custom("Avenir.light", size: 15))
-//                            .padding()
-//                    }
-//                    HStack {
-////                        Image(systemName: "figure.mixed.cardio")
-////                            .foregroundColor(.red)
-////                            .font(.system(size: 15))
-//
-//                        Text("\(exercise.instructions)")
-//                            .foregroundColor(mainColor)
-//                            .font(.custom("Avenir.light", size: 15))
-//                            .padding()
-//                    }
-//
-//                }
-//                .padding(40)
-//                .frame(maxHeight: .infinity)
-////                .background(
-////                    RoundedRectangle(cornerRadius: 10)
-////                        .foregroundColor(.gray)
-////                )
-//            }
-//        }
-//    }
-//}
 
 
 

@@ -46,6 +46,7 @@ struct SearchExerciseLibrary: View {
 
     var body: some View {
         VStack {
+            Spacer()
             HStack {
                 Picker("Muscle", selection: $selectedMuscle) {
                     ForEach(MuscleGroup.allCases, id: \.self) {
@@ -83,7 +84,7 @@ struct SearchExerciseLibrary: View {
                     }
                 }) {
                     Text("Search")
-                        .frame(width: 75, height: 25)
+                        .frame(width: 300, height: 10)
                         .foregroundColor(.white)
                         .padding()
                         .background(mainColor)

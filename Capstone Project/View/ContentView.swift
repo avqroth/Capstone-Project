@@ -18,13 +18,6 @@ struct ContentView: View {@State private var selectedTab: Tab = .tab1
     var body: some View {
         TabView(selection: $selectedTab) {
             
-            HomeView()
-                .tag(Tab.tab1)
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                        .font(.custom("Avenir.bold", size: 22))
-                }
-            
             AddWorkoutView()
                 .tag(Tab.tab2)
                 .tabItem {
@@ -43,7 +36,7 @@ struct ContentView: View {@State private var selectedTab: Tab = .tab1
             AddWorkoutView()
                 .tag(Tab.tab4)
                 .tabItem {
-                    Label("Profile", systemImage: "person")
+                    Label("History", systemImage: "clock.arrow.circlepath")
                         .font(.custom("Avenir.bold", size: 22))
                 }
         }

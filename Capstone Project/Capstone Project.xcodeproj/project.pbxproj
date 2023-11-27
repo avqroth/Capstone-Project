@@ -12,6 +12,7 @@
 		855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */; };
 		855D056A2B132C4E00FF1CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05692B132C4E00FF1CD9 /* HomeView.swift */; };
 		855D05822B14411800FF1CD9 /* Capstone_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */; };
+		855D058B2B14941600FF1CD9 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 855D05892B14941600FF1CD9 /* CoreData.xcdatamodeld */; };
 		858BFC8C2B0160690077F475 /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */; };
 		858BFC8E2B0160690077F475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8D2B0160690077F475 /* ContentView.swift */; };
 		858BFC902B0160710077F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BFC8F2B0160710077F475 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectTests.swift; sourceTree = "<group>"; };
+		855D058A2B14941600FF1CD9 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		858BFC882B0160690077F475 /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		858BFC8D2B0160690077F475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,12 +97,21 @@
 			path = "Capstone ProjectTests";
 			sourceTree = "<group>";
 		};
+		855D05882B1493CA00FF1CD9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				855D05892B14941600FF1CD9 /* CoreData.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		858BFC7F2B0160680077F475 = {
 			isa = PBXGroup;
 			children = (
 				858BFC9A2B0162D30077F475 /* View */,
 				858BFC992B0162740077F475 /* Model */,
 				855D055B2B03C81C00FF1CD9 /* Store */,
+				855D05882B1493CA00FF1CD9 /* CoreData */,
 				858BFC8A2B0160690077F475 /* CapStone App */,
 				855D05802B14411800FF1CD9 /* Capstone ProjectTests */,
 				858BFC892B0160690077F475 /* Products */,
@@ -323,6 +334,7 @@
 			files = (
 				855D056A2B132C4E00FF1CD9 /* HomeView.swift in Sources */,
 				85BD9AC32B0164FF0072A846 /* ExerciseStore.swift in Sources */,
+				855D058B2B14941600FF1CD9 /* CoreData.xcdatamodeld in Sources */,
 				855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */,
 				858BFC8E2B0160690077F475 /* ContentView.swift in Sources */,
 				85BD9ABF2B0164420072A846 /* ExerciseModel.swift in Sources */,
@@ -630,6 +642,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		855D05892B14941600FF1CD9 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				855D058A2B14941600FF1CD9 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 855D058A2B14941600FF1CD9 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 858BFC802B0160680077F475 /* Project object */;
 }
