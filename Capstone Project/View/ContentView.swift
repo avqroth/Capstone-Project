@@ -33,7 +33,7 @@ struct ContentView: View {@State private var selectedTab: Tab = .tab1
                         .font(.custom("Avenir.bold", size: 22))
                 }
             
-            AddWorkoutView()
+            WorkoutHistoryView()
                 .tag(Tab.tab4)
                 .tabItem {
                     Label("History", systemImage: "clock.arrow.circlepath")

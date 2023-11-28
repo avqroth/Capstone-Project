@@ -12,6 +12,8 @@ struct AddWorkoutView: View {
     @State private var equipment: String = ""
     @State private var weight: String = ""
 
+    @ObservedObject var saveWorkoutDataStore = SaveWorkoutData()
+
     var body: some View {
         VStack {
             Section(header: Text("Workout Type").foregroundColor(mainColor))
@@ -75,7 +77,14 @@ struct AddWorkoutView: View {
             }
 
             Button("Add Workout") {
-                // Handle button tap
+                let newWorkout = Workout(
+                    workoutType: workoutType,
+                    sets: sets,
+                    reps: reps,
+                    equipment: equipment,
+                    weight: weight
+                )
+                saveWorkoutDataStore.addWorkout(newWorkout)
             }
             .foregroundColor(.white)
             .padding()
@@ -87,18 +96,18 @@ struct AddWorkoutView: View {
     }
 }
 
-    private let textFieldFontSize: CGFloat = 18
-    private let textFieldVerticalPadding: CGFloat = 8
-    private let textFieldHorizontalPadding: CGFloat = 6
-    private let textFieldCornerRadius: CGFloat = 10
+private let textFieldFontSize: CGFloat = 18
+private let textFieldVerticalPadding: CGFloat = 8
+private let textFieldHorizontalPadding: CGFloat = 6
+private let textFieldCornerRadius: CGFloat = 10
 
-    private let sectionBottomPadding: CGFloat = 20
-    private let buttonCornerRadius: CGFloat = 10
-    private let buttonPadding: CGFloat = 20
-    private let mainPadding: CGFloat = 20
+private let sectionBottomPadding: CGFloat = 20
+private let buttonCornerRadius: CGFloat = 10
+private let buttonPadding: CGFloat = 20
+private let mainPadding: CGFloat = 20
 
-    struct AddWorkoutView_Previews: PreviewProvider {
-        static var previews: some View {
-            AddWorkoutView()
-        }
+struct AddWorkoutView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddWorkoutView()
     }
+}
