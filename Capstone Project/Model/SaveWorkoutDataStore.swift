@@ -14,6 +14,7 @@ struct Workout: Identifiable, Codable {
     var reps: String
     var equipment: String
     var weight: String
+    var notes: String
 }
 
 class SaveWorkoutData: ObservableObject {

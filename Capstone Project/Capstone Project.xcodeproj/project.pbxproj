@@ -87,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				85BD9AC22B0164FF0072A846 /* ExerciseStore.swift */,
-				855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -144,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				85BD9ABE2B0164420072A846 /* ExerciseModel.swift */,
+				855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

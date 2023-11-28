@@ -11,69 +11,87 @@ struct AddWorkoutView: View {
     @State private var reps: String = ""
     @State private var equipment: String = ""
     @State private var weight: String = ""
+    @State private var notes: String = ""
+    @State private var isButtonHighlighted = false
+
 
     @ObservedObject var saveWorkoutDataStore = SaveWorkoutData()
 
     var body: some View {
-        VStack {
-            Section(header: Text("Workout Type").foregroundColor(mainColor))
-            {
-                TextField("  Workout Type", text: $workoutType)
-                    .font(.custom("Avenir", size: textFieldFontSize))
-                    .padding(.vertical, textFieldVerticalPadding)
-                    .padding(.horizontal, textFieldHorizontalPadding)
-                    .background(
-                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                            .foregroundColor(textFieldColor))
-                    .padding(.bottom)
-            }
+        ScrollView {
+            VStack {
+                Section(header: Text("Workout Type").foregroundColor(mainColor))
+                {
+                    TextField("  Workout Type", text: $workoutType)
+                        .font(.custom("Avenir", size: textFieldFontSize))
+                        .padding(.vertical, textFieldVerticalPadding)
+                        .padding(.horizontal, textFieldHorizontalPadding)
+                        .background(
+                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                                .foregroundColor(textFieldColor))
+                        .padding(.bottom)
+                }
 
-            Section(header: Text("Sets").foregroundColor(mainColor))
-            {
-                TextField("  Sets", text: $sets)
-                    .font(.custom("Avenir", size: textFieldFontSize))
-                    .padding(.vertical, textFieldVerticalPadding)
-                    .padding(.horizontal, textFieldHorizontalPadding)
-                    .background(
-                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                            .foregroundColor(textFieldColor))
-                    .padding(.bottom, sectionBottomPadding)
-            }
+                Section(header: Text("Sets").foregroundColor(mainColor))
+                {
+                    TextField("  Sets", text: $sets)
+                        .font(.custom("Avenir", size: textFieldFontSize))
+                        .padding(.vertical, textFieldVerticalPadding)
+                        .padding(.horizontal, textFieldHorizontalPadding)
+                        .background(
+                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                                .foregroundColor(textFieldColor))
+                        .padding(.bottom, sectionBottomPadding)
+                }
 
-            Section(header: Text("Reps").foregroundColor(mainColor))
-            {
-                TextField("  Reps", text: $reps)
-                    .font(.custom("Avenir", size: textFieldFontSize))
-                    .padding(.vertical, textFieldVerticalPadding)
-                    .padding(.horizontal, textFieldHorizontalPadding)
-                    .background(
-                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                            .foregroundColor(textFieldColor))
-                    .padding(.bottom, sectionBottomPadding)
-            }
+                Section(header: Text("Reps").foregroundColor(mainColor))
+                {
+                    TextField("  Reps", text: $reps)
+                        .font(.custom("Avenir", size: textFieldFontSize))
+                        .padding(.vertical, textFieldVerticalPadding)
+                        .padding(.horizontal, textFieldHorizontalPadding)
+                        .background(
+                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                                .foregroundColor(textFieldColor))
+                        .padding(.bottom, sectionBottomPadding)
+                }
 
-            Section(header: Text("Equipment Used").foregroundColor(mainColor))
-            {
-                TextField("  Equipment Used", text: $equipment)
-                    .font(.custom("Avenir", size: textFieldFontSize))
-                    .padding(.vertical, textFieldVerticalPadding)
-                    .padding(.horizontal, textFieldHorizontalPadding)
-                    .background(
-                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                            .foregroundColor(textFieldColor))
-                    .padding(.bottom, sectionBottomPadding)
-            }
+                Section(header: Text("Equipment").foregroundColor(mainColor))
+                {
+                    TextField("  Equipment", text: $equipment)
+                        .font(.custom("Avenir", size: textFieldFontSize))
+                        .padding(.vertical, textFieldVerticalPadding)
+                        .padding(.horizontal, textFieldHorizontalPadding)
+                        .background(
+                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                                .foregroundColor(textFieldColor))
+                        .padding(.bottom, sectionBottomPadding)
+                }
 
-            Section(header: Text("Weights Used").foregroundColor(mainColor))
-            {
-                TextField("  Weights Used", text: $weight)
-                    .font(.custom("Avenir", size: textFieldFontSize))
-                    .padding(.vertical, textFieldVerticalPadding)
-                    .padding(.horizontal, textFieldHorizontalPadding)
-                    .background(
-                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                            .foregroundColor(textFieldColor))
-                    .padding(.bottom, sectionBottomPadding)
+                Section(header: Text("Weights").foregroundColor(mainColor))
+                {
+                    TextField("  Weights", text: $weight)
+                        .font(.custom("Avenir", size: textFieldFontSize))
+                        .padding(.vertical, textFieldVerticalPadding)
+                        .padding(.horizontal, textFieldHorizontalPadding)
+                        .background(
+                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                                .foregroundColor(textFieldColor))
+                        .padding(.bottom, sectionBottomPadding)
+                }
+
+                Section(header: Text("Notes").foregroundColor(mainColor))
+                {
+                    TextField("  Notes", text: $notes, axis: .vertical)
+                        .lineLimit(5...)
+                        .font(.custom("Avenir", size: textFieldFontSize))
+                        .padding(.vertical, textFieldVerticalPadding)
+                        .padding(.horizontal, textFieldHorizontalPadding)
+                        .background(
+                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                                .foregroundColor(textFieldColor))
+                        .padding(.bottom, sectionBottomPadding)
+                }
             }
 
             Button("Add Workout") {
@@ -82,9 +100,15 @@ struct AddWorkoutView: View {
                     sets: sets,
                     reps: reps,
                     equipment: equipment,
-                    weight: weight
+                    weight: weight,
+                    notes: notes
                 )
                 saveWorkoutDataStore.addWorkout(newWorkout)
+            }
+            .onTapGesture {
+                withAnimation(Animation.easeInOut(duration: 1).delay(1)) {
+                    isButtonHighlighted.toggle()
+                }
             }
             .foregroundColor(.white)
             .padding()
