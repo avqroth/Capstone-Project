@@ -14,6 +14,8 @@
 		855D05822B14411800FF1CD9 /* Capstone_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */; };
 		855D058F2B14977400FF1CD9 /* WorkoutHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D058E2B14977400FF1CD9 /* WorkoutHistory.swift */; };
 		855D05912B149B8300FF1CD9 /* SaveWorkoutDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */; };
+		855D05942B1684C200FF1CD9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05932B1684C200FF1CD9 /* NetworkError.swift */; };
+		855D05962B1696BD00FF1CD9 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 855D05952B1696BD00FF1CD9 /* APIKeys.plist */; };
 		858BFC8C2B0160690077F475 /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */; };
 		858BFC8E2B0160690077F475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8D2B0160690077F475 /* ContentView.swift */; };
 		858BFC902B0160710077F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BFC8F2B0160710077F475 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		855D05812B14411800FF1CD9 /* Capstone_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectTests.swift; sourceTree = "<group>"; };
 		855D058E2B14977400FF1CD9 /* WorkoutHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistory.swift; sourceTree = "<group>"; };
 		855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWorkoutDataStore.swift; sourceTree = "<group>"; };
+		855D05932B1684C200FF1CD9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		855D05952B1696BD00FF1CD9 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		858BFC882B0160690077F475 /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		858BFC8D2B0160690077F475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				85BD9AC22B0164FF0072A846 /* ExerciseStore.swift */,
+				855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */,
+				855D05952B1696BD00FF1CD9 /* APIKeys.plist */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -99,10 +105,19 @@
 			path = "Capstone ProjectTests";
 			sourceTree = "<group>";
 		};
+		855D05922B1684AB00FF1CD9 /* ErrorManager */ = {
+			isa = PBXGroup;
+			children = (
+				855D05932B1684C200FF1CD9 /* NetworkError.swift */,
+			);
+			path = ErrorManager;
+			sourceTree = "<group>";
+		};
 		858BFC7F2B0160680077F475 = {
 			isa = PBXGroup;
 			children = (
 				858BFC9A2B0162D30077F475 /* View */,
+				855D05922B1684AB00FF1CD9 /* ErrorManager */,
 				858BFC992B0162740077F475 /* Model */,
 				855D055B2B03C81C00FF1CD9 /* Store */,
 				858BFC8A2B0160690077F475 /* CapStone App */,
@@ -143,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				85BD9ABE2B0164420072A846 /* ExerciseModel.swift */,
-				855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +296,7 @@
 			files = (
 				858BFC932B0160710077F475 /* Preview Assets.xcassets in Resources */,
 				858BFC902B0160710077F475 /* Assets.xcassets in Resources */,
+				855D05962B1696BD00FF1CD9 /* APIKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +352,7 @@
 				855D055A2B03C7F800FF1CD9 /* AddWorkoutView.swift in Sources */,
 				855D05912B149B8300FF1CD9 /* SaveWorkoutDataStore.swift in Sources */,
 				858BFC8C2B0160690077F475 /* Capstone_ProjectApp.swift in Sources */,
+				855D05942B1684C200FF1CD9 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

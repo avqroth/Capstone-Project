@@ -3,4 +3,54 @@
    uuid = "CA2CDF2B-20FA-48F4-ADB4-7CA174673A71"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A65070CB-6D94-40E7-9342-F090F9B37E4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Store/ExerciseStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "readApiKeyFromPlist()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A65070CB-6D94-40E7-9342-F090F9B37E4F - 47e3ba1ef3e9e770"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Capstone_Project.ExerciseStore.readApiKeyFromPlist() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "1936">
+               </Location>
+               <Location
+                  uuid = "A65070CB-6D94-40E7-9342-F090F9B37E4F - 47e3ba1ef3e9e732"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Capstone_Project.ExerciseStore.readApiKeyFromPlist() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

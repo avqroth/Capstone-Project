@@ -13,7 +13,7 @@ struct AddWorkoutView: View {
     @State private var weight: String = ""
     @State private var notes: String = ""
     @State private var isButtonHighlighted = false
-
+    @State private var isSavingWorkout = false
 
     @ObservedObject var saveWorkoutDataStore = SaveWorkoutData()
 
@@ -95,16 +95,16 @@ struct AddWorkoutView: View {
             }
 
             Button("Add Workout") {
-                let newWorkout = Workout(
-                    workoutType: workoutType,
-                    sets: sets,
-                    reps: reps,
-                    equipment: equipment,
-                    weight: weight,
-                    notes: notes
-                )
-                saveWorkoutDataStore.addWorkout(newWorkout)
-            }
+                    let newWorkout = Workout(
+                        workoutType: workoutType,
+                        sets: sets,
+                        reps: reps,
+                        equipment: equipment,
+                        weight: weight,
+                        notes: notes
+                    )
+                    saveWorkoutDataStore.addWorkout(newWorkout)
+                }
             .onTapGesture {
                 withAnimation(Animation.easeInOut(duration: 1).delay(1)) {
                     isButtonHighlighted.toggle()

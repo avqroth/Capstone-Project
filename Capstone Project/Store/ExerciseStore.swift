@@ -11,8 +11,17 @@ import Foundation
 class ExerciseStore: ObservableObject {
     
     @Published var exercises: [ExerciseEntry] = []
-    let apiKey = "MJxsk6mH4ZaWoZAxaF1Ixe0GWpHEhZEjdiWAxSRT"
     let baseURL = "https://api.api-ninjas.com/v1/exercises"
+
+    private func readApiKeyFromPlist() -> String? {
+            guard let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist"),
+                  let keys = NSDictionary(contentsOfFile: path),
+                  let apiKey = keys["API Key"] as? String
+            else {
+                return nil
+            }
+            return apiKey
+        }
     
     func searchExercises(name: String?, type: String?, muscle: String?, equipment: String?, difficulty: String?, instructions: String?) async throws {
         guard let url = URL(string: baseURL) else {
@@ -38,7 +47,12 @@ class ExerciseStore: ObservableObject {
         }
 
         request.url?.append(queryItems: queryItems)
-        request.addValue(apiKey, forHTTPHeaderField: "X-Api-Key")
+
+        if let apiKey = readApiKeyFromPlist() {
+                    request.addValue(apiKey, forHTTPHeaderField: "X-Api-Key")
+                } else {
+                    throw NSError(domain: "API Key Error", code: 0, userInfo: nil)
+                }
         
         print("~~~~ URL Request \n \(request) \n \(String(describing: request.allHTTPHeaderFields))")
         let (data, response) = try await URLSession.shared.data(for: request)
