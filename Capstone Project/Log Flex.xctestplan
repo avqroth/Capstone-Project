@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "36B4733E-10B5-47DB-998B-1F0ED2F20146",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Log Flex.xcodeproj",
+      "identifier" : "858BFC872B0160690077F475",
+      "name" : "Capstone Project"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Log Flex.xcodeproj",
+        "identifier" : "855D059C2B1971C000FF1CD9",
+        "name" : "LogFlex Project Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Log Flex.xcodeproj",
+        "identifier" : "855D05A92B19728600FF1CD9",
+        "name" : "LogFlex UIProjectTests"
+      }
+    }
+  ],
+  "version" : 1
+}

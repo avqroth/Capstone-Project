@@ -12,7 +12,7 @@ class ExerciseModel: Codable, ObservableObject, Identifiable {
     var id: UUID = UUID()
     let count: Int
     let exercises: [ExerciseEntry]
-    
+
 }
 
 class ExerciseEntry: Codable, Identifiable {

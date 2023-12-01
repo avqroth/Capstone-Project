@@ -13,6 +13,7 @@
   },
   "testTargets" : [
     {
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:Capstone Project.xcodeproj",
         "identifier" : "855D059C2B1971C000FF1CD9",
@@ -20,8 +21,23 @@
       }
     },
     {
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D05A92B19728600FF1CD9",
+        "name" : "LogFlex UIProjectTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Log Flex.xcodeproj",
+        "identifier" : "855D059C2B1971C000FF1CD9",
+        "name" : "LogFlex Project Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Log Flex.xcodeproj",
         "identifier" : "855D05A92B19728600FF1CD9",
         "name" : "LogFlex UIProjectTests"
       }

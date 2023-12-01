@@ -26,54 +26,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "855D056E2B143AF400FF1CD9"
-               BuildableName = "Capstone ProjectUITests.xctest"
-               BlueprintName = "Capstone ProjectUITests"
-               ReferencedContainer = "container:Log Flex.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "855D057E2B14411800FF1CD9"
-               BuildableName = "Capstone ProjectTests.xctest"
-               BlueprintName = "Capstone ProjectTests"
-               ReferencedContainer = "container:Log Flex.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "855D059C2B1971C000FF1CD9"
-               BuildableName = "LogFlex Project Tests.xctest"
-               BlueprintName = "LogFlex Project Tests"
-               ReferencedContainer = "container:Log Flex.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "855D05A92B19728600FF1CD9"
-               BuildableName = "LogFlex UIProjectTests.xctest"
-               BlueprintName = "LogFlex UIProjectTests"
-               ReferencedContainer = "container:Log Flex.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Log Flex.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
