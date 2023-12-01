@@ -105,6 +105,7 @@ struct AddWorkoutView: View {
                     )
                     saveWorkoutDataStore.addWorkout(newWorkout)
                 }
+            .accessibility(identifier: "Add Workout")
             .onTapGesture {
                 withAnimation(Animation.easeInOut(duration: 1).delay(1)) {
                     isButtonHighlighted.toggle()

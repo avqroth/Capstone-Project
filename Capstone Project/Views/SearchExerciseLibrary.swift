@@ -65,7 +65,8 @@ struct SearchExerciseLibrary: View {
                         }
                         isFetchingData = false
                     }
-                }) {
+                })
+                {
                     Text("Search")
                         .frame(width: 300, height: 10)
                         .foregroundColor(.white)
@@ -73,10 +74,12 @@ struct SearchExerciseLibrary: View {
                         .background(mainColor)
                         .cornerRadius(10)
                 }
+                .accessibility(identifier: "Search")
             }.padding()
 
             if isFetchingData {
                 ProgressView("Fetching Exercises...")
+                    .accessibility(identifier: "loadingIndicator")
                     .progressViewStyle(CircularProgressViewStyle())
                     .padding()
             }

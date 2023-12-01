@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8515CA3E2B19D8B6008E2448 /* LogFlex_UIProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8515CA3D2B19D8B6008E2448 /* LogFlex_UIProjectTests.swift */; };
 		855D05582B03C7E600FF1CD9 /* SearchExerciseLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */; };
 		855D055A2B03C7F800FF1CD9 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */; };
 		855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */; };
@@ -15,8 +16,6 @@
 		855D05942B1684C200FF1CD9 /* CapstoneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05932B1684C200FF1CD9 /* CapstoneError.swift */; };
 		855D05982B19250F00FF1CD9 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 855D05972B19250F00FF1CD9 /* APIKeys.plist */; };
 		855D05A02B1971C000FF1CD9 /* LogFlex_Project_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D059F2B1971C000FF1CD9 /* LogFlex_Project_Tests.swift */; };
-		855D05AD2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05AC2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift */; };
-		855D05AF2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05AE2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift */; };
 		855D05B72B19912E00FF1CD9 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 855D05B62B19912E00FF1CD9 /* testData.json */; };
 		858BFC8C2B0160690077F475 /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */; };
 		858BFC8E2B0160690077F475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8D2B0160690077F475 /* ContentView.swift */; };
@@ -44,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8515CA3D2B19D8B6008E2448 /* LogFlex_UIProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogFlex_UIProjectTests.swift; path = ../../../../.Trash/LogFlex_UIProjectTests.swift; sourceTree = "<group>"; };
 		855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExerciseLibrary.swift; sourceTree = "<group>"; };
 		855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
@@ -54,10 +54,8 @@
 		855D059D2B1971C000FF1CD9 /* LogFlex Project Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogFlex Project Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D059F2B1971C000FF1CD9 /* LogFlex_Project_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFlex_Project_Tests.swift; sourceTree = "<group>"; };
 		855D05AA2B19728600FF1CD9 /* LogFlex UIProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogFlex UIProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		855D05AC2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFlex_UIProjectTests.swift; sourceTree = "<group>"; };
-		855D05AE2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFlex_UIProjectTestsLaunchTests.swift; sourceTree = "<group>"; };
-		855D05B52B198F2000FF1CD9 /* Capstone Project.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Capstone Project.xctestplan"; sourceTree = "<group>"; };
 		855D05B62B19912E00FF1CD9 /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
+		855D05B82B19D14E00FF1CD9 /* LogFlex.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LogFlex.xctestplan; sourceTree = "<group>"; };
 		858BFC882B0160690077F475 /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		858BFC8D2B0160690077F475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,8 +119,7 @@
 		855D05AB2B19728600FF1CD9 /* LogFlex UIProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				855D05AC2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift */,
-				855D05AE2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift */,
+				8515CA3D2B19D8B6008E2448 /* LogFlex_UIProjectTests.swift */,
 			);
 			path = "LogFlex UIProjectTests";
 			sourceTree = "<group>";
@@ -130,7 +127,7 @@
 		858BFC7F2B0160680077F475 = {
 			isa = PBXGroup;
 			children = (
-				855D05B52B198F2000FF1CD9 /* Capstone Project.xctestplan */,
+				855D05B82B19D14E00FF1CD9 /* LogFlex.xctestplan */,
 				855D05972B19250F00FF1CD9 /* APIKeys.plist */,
 				858BFC9A2B0162D30077F475 /* Views */,
 				855D05922B1684AB00FF1CD9 /* Errors */,
@@ -264,6 +261,7 @@
 					};
 					855D05A92B19728600FF1CD9 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 858BFC872B0160690077F475;
 					};
 					858BFC872B0160690077F475 = {
@@ -271,7 +269,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 858BFC832B0160680077F475 /* Build configuration list for PBXProject "Capstone Project" */;
+			buildConfigurationList = 858BFC832B0160680077F475 /* Build configuration list for PBXProject "Log Flex" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -322,6 +320,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		855D05662B0BCDAC00FF1CD9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -335,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -352,8 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				855D05AF2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift in Sources */,
-				855D05AD2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift in Sources */,
+				8515CA3E2B19D8B6008E2448 /* LogFlex_UIProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +427,7 @@
 		855D05B32B19728600FF1CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
@@ -437,6 +436,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.LogFlex-UIProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "LogFlex UIProjectTests/LogFlex UIProjectTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Capstone Project";
@@ -446,6 +447,7 @@
 		855D05B42B19728600FF1CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
@@ -454,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.LogFlex-UIProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "LogFlex UIProjectTests/LogFlex UIProjectTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Capstone Project";
@@ -653,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858BFC832B0160680077F475 /* Build configuration list for PBXProject "Capstone Project" */ = {
+		858BFC832B0160680077F475 /* Build configuration list for PBXProject "Log Flex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858BFC942B0160710077F475 /* Debug */,

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "858BFC872B0160690077F475"
                BuildableName = "Capstone Project.app"
                BlueprintName = "Capstone Project"
-               ReferencedContainer = "container:Capstone Project.xcodeproj">
+               ReferencedContainer = "container:Log Flex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:Capstone Project.xctestplan"
+            reference = "container:LogFlex.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -42,7 +42,7 @@
                BlueprintIdentifier = "855D056E2B143AF400FF1CD9"
                BuildableName = "Capstone ProjectUITests.xctest"
                BlueprintName = "Capstone ProjectUITests"
-               ReferencedContainer = "container:Capstone Project.xcodeproj">
+               ReferencedContainer = "container:Log Flex.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -53,7 +53,7 @@
                BlueprintIdentifier = "855D057E2B14411800FF1CD9"
                BuildableName = "Capstone ProjectTests.xctest"
                BlueprintName = "Capstone ProjectTests"
-               ReferencedContainer = "container:Capstone Project.xcodeproj">
+               ReferencedContainer = "container:Log Flex.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -64,7 +64,7 @@
                BlueprintIdentifier = "855D059C2B1971C000FF1CD9"
                BuildableName = "LogFlex Project Tests.xctest"
                BlueprintName = "LogFlex Project Tests"
-               ReferencedContainer = "container:Capstone Project.xcodeproj">
+               ReferencedContainer = "container:Log Flex.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -75,7 +75,7 @@
                BlueprintIdentifier = "855D05A92B19728600FF1CD9"
                BuildableName = "LogFlex UIProjectTests.xctest"
                BlueprintName = "LogFlex UIProjectTests"
-               ReferencedContainer = "container:Capstone Project.xcodeproj">
+               ReferencedContainer = "container:Log Flex.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "858BFC872B0160690077F475"
             BuildableName = "Capstone Project.app"
             BlueprintName = "Capstone Project"
-            ReferencedContainer = "container:Capstone Project.xcodeproj">
+            ReferencedContainer = "container:Log Flex.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -114,7 +114,7 @@
             BlueprintIdentifier = "858BFC872B0160690077F475"
             BuildableName = "Capstone Project.app"
             BlueprintName = "Capstone Project"
-            ReferencedContainer = "container:Capstone Project.xcodeproj">
+            ReferencedContainer = "container:Log Flex.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "5AAC08C6-A54B-425D-ABE6-0D0C9E7B3001",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D059C2B1971C000FF1CD9",
+        "name" : "LogFlex Project Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D05A92B19728600FF1CD9",
+        "name" : "LogFlex UIProjectTests"
+      }
+    }
+  ],
+  "version" : 1
+}
