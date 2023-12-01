@@ -54,7 +54,8 @@ struct SearchExerciseLibrary: View {
                                 muscle: selectedMuscle.rawValue,
                                 equipment: nil,
                                 difficulty: selectedDifficulty.rawValue,
-                                instructions: nil
+                                instructions: nil,
+                                session: URLSession.shared
                             )
                             print("Fetched Data: \(exerciseStore.exercises)")
                         } catch {
@@ -115,11 +116,6 @@ struct SearchExerciseLibrary: View {
         alertTitle = title
         alertMessage = message
     }
-}
-
-enum NetworkError: Error {
-    case serverError(statusCode: Int)
-    case noNetwork
 }
 
 enum MuscleGroup: String, CaseIterable {

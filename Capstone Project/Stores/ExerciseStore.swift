@@ -7,6 +7,12 @@
 
 import Foundation
 
+protocol URLSessionProtocol {
+    func data(for request: URLRequest) async throws -> (Data, URLResponse)
+}
+
+extension URLSession: URLSessionProtocol {}
+
 @MainActor
 class ExerciseStore: ObservableObject {
     
@@ -23,7 +29,7 @@ class ExerciseStore: ObservableObject {
         return apiKey
     }
     
-    func searchExercises(name: String?, type: String?, muscle: String?, equipment: String?, difficulty: String?, instructions: String?) async throws {
+    func searchExercises(name: String?, type: String?, muscle: String?, equipment: String?, difficulty: String?, instructions: String?, session: URLSessionProtocol) async throws {
         guard let url = URL(string: baseURL) else {
             throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
         }
@@ -57,7 +63,7 @@ class ExerciseStore: ObservableObject {
         print("~~~~ URL Request \n \(request) \n \(String(describing: request.allHTTPHeaderFields))")
         var (data, response): (Data, URLResponse)
         do {
-            (data, response) = try await URLSession.shared.data(for: request)
+            (data, response) = try await session.data(for: request)
         } catch  {
             throw CapstoneError.network
         }
@@ -67,6 +73,7 @@ class ExerciseStore: ObservableObject {
             switch httpResponse.statusCode {
             case 200...204:
                 let decoder = JSONDecoder()
+                print(String(data: data, encoding: .utf8) as Any)
                 exercises = try decoder.decode([ExerciseEntry].self, from: data)
                 if exercises.count == 0 {
                     throw CapstoneError.noData  

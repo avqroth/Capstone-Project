@@ -26,8 +26,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Capstone Project.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -48,6 +53,28 @@
                BlueprintIdentifier = "855D057E2B14411800FF1CD9"
                BuildableName = "Capstone ProjectTests.xctest"
                BlueprintName = "Capstone ProjectTests"
+               ReferencedContainer = "container:Capstone Project.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "855D059C2B1971C000FF1CD9"
+               BuildableName = "LogFlex Project Tests.xctest"
+               BlueprintName = "LogFlex Project Tests"
+               ReferencedContainer = "container:Capstone Project.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "855D05A92B19728600FF1CD9"
+               BuildableName = "LogFlex UIProjectTests.xctest"
+               BlueprintName = "LogFlex UIProjectTests"
                ReferencedContainer = "container:Capstone Project.xcodeproj">
             </BuildableReference>
          </TestableReference>

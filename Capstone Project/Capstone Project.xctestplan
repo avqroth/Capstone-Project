@@ -1,0 +1,55 @@
+{
+  "configurations" : [
+    {
+      "id" : "C448244D-DF5F-40E6-8625-E703FBB133D9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Capstone Project.xcodeproj",
+      "identifier" : "858BFC872B0160690077F475",
+      "name" : "Capstone Project"
+    }
+  },
+  "testTargets" : [
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D056E2B143AF400FF1CD9",
+        "name" : "Capstone ProjectUITests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D057E2B14411800FF1CD9",
+        "name" : "Capstone ProjectTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D059C2B1971C000FF1CD9",
+        "name" : "LogFlex Project Tests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Capstone Project.xcodeproj",
+        "identifier" : "855D05A92B19728600FF1CD9",
+        "name" : "LogFlex UIProjectTests"
+      }
+    }
+  ],
+  "version" : 1
+}

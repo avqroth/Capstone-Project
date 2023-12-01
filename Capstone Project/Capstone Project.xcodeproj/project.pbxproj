@@ -14,6 +14,10 @@
 		855D05912B149B8300FF1CD9 /* SaveWorkoutDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */; };
 		855D05942B1684C200FF1CD9 /* CapstoneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05932B1684C200FF1CD9 /* CapstoneError.swift */; };
 		855D05982B19250F00FF1CD9 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 855D05972B19250F00FF1CD9 /* APIKeys.plist */; };
+		855D05A02B1971C000FF1CD9 /* LogFlex_Project_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D059F2B1971C000FF1CD9 /* LogFlex_Project_Tests.swift */; };
+		855D05AD2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05AC2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift */; };
+		855D05AF2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05AE2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift */; };
+		855D05B72B19912E00FF1CD9 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 855D05B62B19912E00FF1CD9 /* testData.json */; };
 		858BFC8C2B0160690077F475 /* Capstone_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */; };
 		858BFC8E2B0160690077F475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8D2B0160690077F475 /* ContentView.swift */; };
 		858BFC902B0160710077F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BFC8F2B0160710077F475 /* Assets.xcassets */; };
@@ -23,14 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		855D05752B143AF400FF1CD9 /* PBXContainerItemProxy */ = {
+		855D05A12B1971C000FF1CD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 858BFC802B0160680077F475 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 858BFC872B0160690077F475;
 			remoteInfo = "Capstone Project";
 		};
-		855D05832B14411800FF1CD9 /* PBXContainerItemProxy */ = {
+		855D05B02B19728600FF1CD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 858BFC802B0160680077F475 /* Project object */;
 			proxyType = 1;
@@ -43,12 +47,17 @@
 		855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExerciseLibrary.swift; sourceTree = "<group>"; };
 		855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
-		855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Capstone ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D058E2B14977400FF1CD9 /* WorkoutHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistory.swift; sourceTree = "<group>"; };
 		855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWorkoutDataStore.swift; sourceTree = "<group>"; };
 		855D05932B1684C200FF1CD9 /* CapstoneError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneError.swift; sourceTree = "<group>"; };
 		855D05972B19250F00FF1CD9 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+		855D059D2B1971C000FF1CD9 /* LogFlex Project Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogFlex Project Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855D059F2B1971C000FF1CD9 /* LogFlex_Project_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFlex_Project_Tests.swift; sourceTree = "<group>"; };
+		855D05AA2B19728600FF1CD9 /* LogFlex UIProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogFlex UIProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855D05AC2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFlex_UIProjectTests.swift; sourceTree = "<group>"; };
+		855D05AE2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFlex_UIProjectTestsLaunchTests.swift; sourceTree = "<group>"; };
+		855D05B52B198F2000FF1CD9 /* Capstone Project.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Capstone Project.xctestplan"; sourceTree = "<group>"; };
+		855D05B62B19912E00FF1CD9 /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
 		858BFC882B0160690077F475 /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858BFC8B2B0160690077F475 /* Capstone_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capstone_ProjectApp.swift; sourceTree = "<group>"; };
 		858BFC8D2B0160690077F475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,14 +68,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		855D056C2B143AF400FF1CD9 /* Frameworks */ = {
+		855D059A2B1971C000FF1CD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		855D057C2B14411800FF1CD9 /* Frameworks */ = {
+		855D05A72B19728600FF1CD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,31 +101,44 @@
 			path = Stores;
 			sourceTree = "<group>";
 		};
-		855D05802B14411800FF1CD9 /* Capstone ProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Capstone ProjectTests";
-			sourceTree = "<group>";
-		};
-		855D05922B1684AB00FF1CD9 /* Error */ = {
+		855D05922B1684AB00FF1CD9 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
 				855D05932B1684C200FF1CD9 /* CapstoneError.swift */,
 			);
-			path = Error;
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		855D059E2B1971C000FF1CD9 /* LogFlex ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				855D059F2B1971C000FF1CD9 /* LogFlex_Project_Tests.swift */,
+				855D05B62B19912E00FF1CD9 /* testData.json */,
+			);
+			path = "LogFlex ProjectTests";
+			sourceTree = "<group>";
+		};
+		855D05AB2B19728600FF1CD9 /* LogFlex UIProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				855D05AC2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift */,
+				855D05AE2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift */,
+			);
+			path = "LogFlex UIProjectTests";
 			sourceTree = "<group>";
 		};
 		858BFC7F2B0160680077F475 = {
 			isa = PBXGroup;
 			children = (
+				855D05B52B198F2000FF1CD9 /* Capstone Project.xctestplan */,
 				855D05972B19250F00FF1CD9 /* APIKeys.plist */,
 				858BFC9A2B0162D30077F475 /* Views */,
-				855D05922B1684AB00FF1CD9 /* Error */,
+				855D05922B1684AB00FF1CD9 /* Errors */,
 				858BFC992B0162740077F475 /* Model */,
 				855D055B2B03C81C00FF1CD9 /* Stores */,
 				858BFC8A2B0160690077F475 /* CapStone App */,
-				855D05802B14411800FF1CD9 /* Capstone ProjectTests */,
+				855D059E2B1971C000FF1CD9 /* LogFlex ProjectTests */,
+				855D05AB2B19728600FF1CD9 /* LogFlex UIProjectTests */,
 				858BFC892B0160690077F475 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				858BFC882B0160690077F475 /* Capstone Project.app */,
-				855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */,
-				855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */,
+				855D059D2B1971C000FF1CD9 /* LogFlex Project Tests.xctest */,
+				855D05AA2B19728600FF1CD9 /* LogFlex UIProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,41 +194,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		855D056E2B143AF400FF1CD9 /* Capstone ProjectUITests */ = {
+		855D059C2B1971C000FF1CD9 /* LogFlex Project Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 855D05772B143AF400FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectUITests" */;
+			buildConfigurationList = 855D05A32B1971C000FF1CD9 /* Build configuration list for PBXNativeTarget "LogFlex Project Tests" */;
 			buildPhases = (
-				855D056B2B143AF400FF1CD9 /* Sources */,
-				855D056C2B143AF400FF1CD9 /* Frameworks */,
-				855D056D2B143AF400FF1CD9 /* Resources */,
+				855D05992B1971C000FF1CD9 /* Sources */,
+				855D059A2B1971C000FF1CD9 /* Frameworks */,
+				855D059B2B1971C000FF1CD9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				855D05762B143AF400FF1CD9 /* PBXTargetDependency */,
+				855D05A22B1971C000FF1CD9 /* PBXTargetDependency */,
 			);
-			name = "Capstone ProjectUITests";
-			productName = "Capstone ProjectUITests";
-			productReference = 855D056F2B143AF400FF1CD9 /* Capstone ProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		855D057E2B14411800FF1CD9 /* Capstone ProjectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 855D05852B14411800FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectTests" */;
-			buildPhases = (
-				855D057B2B14411800FF1CD9 /* Sources */,
-				855D057C2B14411800FF1CD9 /* Frameworks */,
-				855D057D2B14411800FF1CD9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				855D05842B14411800FF1CD9 /* PBXTargetDependency */,
-			);
-			name = "Capstone ProjectTests";
-			productName = "Capstone ProjectTests";
-			productReference = 855D057F2B14411800FF1CD9 /* Capstone ProjectTests.xctest */;
+			name = "LogFlex Project Tests";
+			productName = "LogFlex Project Tests";
+			productReference = 855D059D2B1971C000FF1CD9 /* LogFlex Project Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		855D05A92B19728600FF1CD9 /* LogFlex UIProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855D05B22B19728600FF1CD9 /* Build configuration list for PBXNativeTarget "LogFlex UIProjectTests" */;
+			buildPhases = (
+				855D05A62B19728600FF1CD9 /* Sources */,
+				855D05A72B19728600FF1CD9 /* Frameworks */,
+				855D05A82B19728600FF1CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855D05B12B19728600FF1CD9 /* PBXTargetDependency */,
+			);
+			name = "LogFlex UIProjectTests";
+			productName = "LogFlex UIProjectTests";
+			productReference = 855D05AA2B19728600FF1CD9 /* LogFlex UIProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		858BFC872B0160690077F475 /* Capstone Project */ = {
 			isa = PBXNativeTarget;
@@ -236,11 +258,11 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					855D056E2B143AF400FF1CD9 = {
+					855D059C2B1971C000FF1CD9 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 858BFC872B0160690077F475;
 					};
-					855D057E2B14411800FF1CD9 = {
+					855D05A92B19728600FF1CD9 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 858BFC872B0160690077F475;
 					};
@@ -263,21 +285,22 @@
 			projectRoot = "";
 			targets = (
 				858BFC872B0160690077F475 /* Capstone Project */,
-				855D056E2B143AF400FF1CD9 /* Capstone ProjectUITests */,
-				855D057E2B14411800FF1CD9 /* Capstone ProjectTests */,
+				855D059C2B1971C000FF1CD9 /* LogFlex Project Tests */,
+				855D05A92B19728600FF1CD9 /* LogFlex UIProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		855D056D2B143AF400FF1CD9 /* Resources */ = {
+		855D059B2B1971C000FF1CD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855D05B72B19912E00FF1CD9 /* testData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		855D057D2B14411800FF1CD9 /* Resources */ = {
+		855D05A82B19728600FF1CD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,17 +340,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		855D056B2B143AF400FF1CD9 /* Sources */ = {
+		855D05992B1971C000FF1CD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855D05A02B1971C000FF1CD9 /* LogFlex_Project_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		855D057B2B14411800FF1CD9 /* Sources */ = {
+		855D05A62B19728600FF1CD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855D05AF2B19728600FF1CD9 /* LogFlex_UIProjectTestsLaunchTests.swift in Sources */,
+				855D05AD2B19728600FF1CD9 /* LogFlex_UIProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,86 +377,86 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		855D05762B143AF400FF1CD9 /* PBXTargetDependency */ = {
+		855D05A22B1971C000FF1CD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 858BFC872B0160690077F475 /* Capstone Project */;
-			targetProxy = 855D05752B143AF400FF1CD9 /* PBXContainerItemProxy */;
+			targetProxy = 855D05A12B1971C000FF1CD9 /* PBXContainerItemProxy */;
 		};
-		855D05842B14411800FF1CD9 /* PBXTargetDependency */ = {
+		855D05B12B19728600FF1CD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 858BFC872B0160690077F475 /* Capstone Project */;
-			targetProxy = 855D05832B14411800FF1CD9 /* PBXContainerItemProxy */;
+			targetProxy = 855D05B02B19728600FF1CD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		855D05782B143AF400FF1CD9 /* Debug */ = {
+		855D05A42B1971C000FF1CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.LogFlex-Project-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Capstone Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone Project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone Project";
 			};
 			name = Debug;
 		};
-		855D05792B143AF400FF1CD9 /* Release */ = {
+		855D05A52B1971C000FF1CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.LogFlex-Project-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Capstone Project";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone Project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone Project";
 			};
 			name = Release;
 		};
-		855D05862B14411800FF1CD9 /* Debug */ = {
+		855D05B32B19728600FF1CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.LogFlex-UIProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone Project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone Project";
+				TEST_TARGET_NAME = "Capstone Project";
 			};
 			name = Debug;
 		};
-		855D05872B14411800FF1CD9 /* Release */ = {
+		855D05B42B19728600FF1CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.Capstone-ProjectTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "AveryRoth.LogFlex-UIProjectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capstone Project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Capstone Project";
+				TEST_TARGET_NAME = "Capstone Project";
 			};
 			name = Release;
 		};
@@ -609,20 +635,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		855D05772B143AF400FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectUITests" */ = {
+		855D05A32B1971C000FF1CD9 /* Build configuration list for PBXNativeTarget "LogFlex Project Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				855D05782B143AF400FF1CD9 /* Debug */,
-				855D05792B143AF400FF1CD9 /* Release */,
+				855D05A42B1971C000FF1CD9 /* Debug */,
+				855D05A52B1971C000FF1CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		855D05852B14411800FF1CD9 /* Build configuration list for PBXNativeTarget "Capstone ProjectTests" */ = {
+		855D05B22B19728600FF1CD9 /* Build configuration list for PBXNativeTarget "LogFlex UIProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				855D05862B14411800FF1CD9 /* Debug */,
-				855D05872B14411800FF1CD9 /* Release */,
+				855D05B32B19728600FF1CD9 /* Debug */,
+				855D05B42B19728600FF1CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
