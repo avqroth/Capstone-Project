@@ -7,3 +7,8 @@
 
 import SwiftUI
 
+enum CapstoneError: Error {
+    case network
+    case api
+    case noData
+}

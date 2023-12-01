@@ -7,47 +7,248 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A65070CB-6D94-40E7-9342-F090F9B37E4F"
+            uuid = "64475E5E-F1DB-4CDD-8AAB-B608FE764133"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Store/ExerciseStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "readApiKeyFromPlist()"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "searchExercises(name:type:muscle:equipment:difficulty:instructions:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "A65070CB-6D94-40E7-9342-F090F9B37E4F - 47e3ba1ef3e9e770"
+                  uuid = "64475E5E-F1DB-4CDD-8AAB-B608FE764133 - c688f9e2bdbf0434"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Capstone_Project.ExerciseStore.readApiKeyFromPlist() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  symbolName = "(3) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
                   moduleName = "Capstone Project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "1936">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "980">
                </Location>
                <Location
-                  uuid = "A65070CB-6D94-40E7-9342-F090F9B37E4F - 47e3ba1ef3e9e732"
+                  uuid = "64475E5E-F1DB-4CDD-8AAB-B608FE764133 - c688f9e2bdbf044b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Capstone_Project.ExerciseStore.readApiKeyFromPlist() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  symbolName = "(3) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
                   moduleName = "Capstone Project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "1612">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "972">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Store/ExerciseStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "searchExercises(name:type:muscle:equipment:difficulty:instructions:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - 376973b71a1843b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "2980">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - fb84988ec6059de0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - c688f9e2bdbf07b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - 6d38bafb9212b98f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - 376973b71a1843d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "2816">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - fb84988ec6059d87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - c688f9e2bdbf07d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "77D67EBC-B7E4-49A8-9483-23E9727436F1 - 6d38bafb9212b9e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Capstone_Project.ExerciseStore.searchExercises(name: Swift.Optional&lt;Swift.String&gt;, type: Swift.Optional&lt;Swift.String&gt;, muscle: Swift.Optional&lt;Swift.String&gt;, equipment: Swift.Optional&lt;Swift.String&gt;, difficulty: Swift.Optional&lt;Swift.String&gt;, instructions: Swift.Optional&lt;Swift.String&gt;) async throws -&gt; ()"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/Store/ExerciseStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1563DAE-2956-40F3-85E1-678D5FE71B26"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "View/SearchExerciseLibrary.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B1563DAE-2956-40F3-85E1-678D5FE71B26 - 354fdfde1fb81615"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(_: &#x3c4;_1_0, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0)&gt; in Capstone_Project.SearchExerciseLibrary.body.getter : some"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/View/SearchExerciseLibrary.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "B1563DAE-2956-40F3-85E1-678D5FE71B26 - ccb39f854f3970f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(_: &#x3c4;_1_0, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0)&gt; in Capstone_Project.SearchExerciseLibrary.body.getter : some"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/View/SearchExerciseLibrary.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "B1563DAE-2956-40F3-85E1-678D5FE71B26 - 354fdfde1fb81699"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.cornerRadius(_: CoreGraphics.CGFloat, antialiased: Swift.Bool) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(_: &#x3c4;_1_0, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0)&gt; in Capstone_Project.SearchExerciseLibrary.body.getter : some"
+                  moduleName = "Capstone Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/averyroth/Documents/CapStone-Project/Capstone%20Project/View/SearchExerciseLibrary.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "412">
                </Location>
             </Locations>
          </BreakpointContent>

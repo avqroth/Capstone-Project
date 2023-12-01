@@ -14,14 +14,14 @@ class ExerciseStore: ObservableObject {
     let baseURL = "https://api.api-ninjas.com/v1/exercises"
 
     private func readApiKeyFromPlist() -> String? {
-            guard let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist"),
-                  let keys = NSDictionary(contentsOfFile: path),
-                  let apiKey = keys["API Key"] as? String
-            else {
-                return nil
-            }
-            return apiKey
+        guard let path = Bundle.main.path(forResource: "APIKeys", ofType: "plist"),
+              let keys = NSDictionary(contentsOfFile: path),
+              let apiKey = keys["API Key"] as? String
+        else {
+            return nil
         }
+        return apiKey
+    }
     
     func searchExercises(name: String?, type: String?, muscle: String?, equipment: String?, difficulty: String?, instructions: String?) async throws {
         guard let url = URL(string: baseURL) else {
@@ -49,23 +49,32 @@ class ExerciseStore: ObservableObject {
         request.url?.append(queryItems: queryItems)
 
         if let apiKey = readApiKeyFromPlist() {
-                    request.addValue(apiKey, forHTTPHeaderField: "X-Api-Key")
-                } else {
-                    throw NSError(domain: "API Key Error", code: 0, userInfo: nil)
-                }
+            request.addValue(apiKey, forHTTPHeaderField: "X-Api-Key")
+        } else {
+            throw NSError(domain: "API Key Error", code: 0, userInfo: nil)
+        }   
         
         print("~~~~ URL Request \n \(request) \n \(String(describing: request.allHTTPHeaderFields))")
-        let (data, response) = try await URLSession.shared.data(for: request)
-        
+        var (data, response): (Data, URLResponse)
+        do {
+            (data, response) = try await URLSession.shared.data(for: request)
+        } catch  {
+            throw CapstoneError.network
+        }
+
         print("~~~~ URL Response \(response)")
         if let httpResponse = response as? HTTPURLResponse {
             switch httpResponse.statusCode {
             case 200...204:
                 let decoder = JSONDecoder()
                 exercises = try decoder.decode([ExerciseEntry].self, from: data)
+                if exercises.count == 0 {
+                    throw CapstoneError.noData  
+                }
                 print("search successful")
             default:
                 print("~~~~ HTTP Error \(httpResponse.statusCode)")
+                throw CapstoneError.api
             }
         }
     }
