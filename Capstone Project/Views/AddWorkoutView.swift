@@ -20,91 +20,86 @@ struct AddWorkoutView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Section(header: Text("Workout Type").foregroundColor(mainColor))
-                {
-                    TextField("  Workout Type", text: $workoutType)
-                        .font(.custom("Avenir", size: textFieldFontSize))
-                        .padding(.vertical, textFieldVerticalPadding)
-                        .padding(.horizontal, textFieldHorizontalPadding)
-                        .background(
-                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                                .foregroundColor(textFieldColor))
+                Spacer(minLength: 75)
+                GeometryReader { geometry in
+                    Text("Add Workout")
+                        .font(.custom("Avenir", size: 40))
+                        .bold()
+                        .frame(width: geometry.size.width, height: 250)
+                        .foregroundColor(mainColor)
+                        .offset(y: geometry.frame(in: .global).minY > 0 ? -geometry.frame(in: .global).minY : 0)
                         .padding(.bottom)
                 }
+                .frame(height: 50)
+                .padding()
 
-                Section(header: Text("Sets").foregroundColor(mainColor))
-                {
-                    TextField("  Sets", text: $sets)
-                        .font(.custom("Avenir", size: textFieldFontSize))
-                        .padding(.vertical, textFieldVerticalPadding)
-                        .padding(.horizontal, textFieldHorizontalPadding)
-                        .background(
-                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                                .foregroundColor(textFieldColor))
-                        .padding(.bottom, sectionBottomPadding)
-                }
+                TextField("  Workout Type", text: $workoutType)
+                    .font(.custom("Avenir", size: textFieldFontSize))
+                    .padding()
+                    .padding(.horizontal, textFieldHorizontalPadding)
+                    .background(
+                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                            .foregroundColor(textFieldColor))
+                    .padding()
 
-                Section(header: Text("Reps").foregroundColor(mainColor))
-                {
-                    TextField("  Reps", text: $reps)
-                        .font(.custom("Avenir", size: textFieldFontSize))
-                        .padding(.vertical, textFieldVerticalPadding)
-                        .padding(.horizontal, textFieldHorizontalPadding)
-                        .background(
-                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                                .foregroundColor(textFieldColor))
-                        .padding(.bottom, sectionBottomPadding)
-                }
+                TextField("  Sets", text: $sets)
+                    .font(.custom("Avenir", size: textFieldFontSize))
+                    .padding()
+                    .padding(.horizontal, textFieldHorizontalPadding)
+                    .background(
+                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                            .foregroundColor(textFieldColor))
+                    .padding()
 
-                Section(header: Text("Equipment").foregroundColor(mainColor))
-                {
-                    TextField("  Equipment", text: $equipment)
-                        .font(.custom("Avenir", size: textFieldFontSize))
-                        .padding(.vertical, textFieldVerticalPadding)
-                        .padding(.horizontal, textFieldHorizontalPadding)
-                        .background(
-                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                                .foregroundColor(textFieldColor))
-                        .padding(.bottom, sectionBottomPadding)
-                }
+                TextField("  Reps", text: $reps)
+                    .font(.custom("Avenir", size: textFieldFontSize))
+                    .padding()
+                    .padding(.horizontal, textFieldHorizontalPadding)
+                    .background(
+                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                            .foregroundColor(textFieldColor))
+                    .padding()
 
-                Section(header: Text("Weights").foregroundColor(mainColor))
-                {
-                    TextField("  Weights", text: $weight)
-                        .font(.custom("Avenir", size: textFieldFontSize))
-                        .padding(.vertical, textFieldVerticalPadding)
-                        .padding(.horizontal, textFieldHorizontalPadding)
-                        .background(
-                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                                .foregroundColor(textFieldColor))
-                        .padding(.bottom, sectionBottomPadding)
-                }
+                TextField("  Equipment", text: $equipment)
+                    .font(.custom("Avenir", size: textFieldFontSize))
+                    .padding()
+                    .padding(.horizontal, textFieldHorizontalPadding)
+                    .background(
+                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                            .foregroundColor(textFieldColor))
+                    .padding()
 
-                Section(header: Text("Notes").foregroundColor(mainColor))
-                {
-                    TextField("  Notes", text: $notes, axis: .vertical)
-                        .lineLimit(5...)
-                        .font(.custom("Avenir", size: textFieldFontSize))
-                        .padding(.vertical, textFieldVerticalPadding)
-                        .padding(.horizontal, textFieldHorizontalPadding)
-                        .background(
-                            RoundedRectangle(cornerRadius: textFieldCornerRadius)
-                                .foregroundColor(textFieldColor))
-                        .padding(.bottom, sectionBottomPadding)
-                }
+                TextField("  Weights", text: $weight)
+                    .font(.custom("Avenir", size: textFieldFontSize))
+                    .padding()
+                    .padding(.horizontal, textFieldHorizontalPadding)
+                    .background(
+                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                            .foregroundColor(textFieldColor))
+                    .padding()
+
+                TextField("  Notes", text: $notes, axis: .vertical)
+                    .lineLimit(5...)
+                    .font(.custom("Avenir", size: textFieldFontSize))
+                    .padding()
+                    .padding(.horizontal, textFieldHorizontalPadding)
+                    .background(
+                        RoundedRectangle(cornerRadius: textFieldCornerRadius)
+                            .foregroundColor(textFieldColor))
+                    .padding()
             }
 
             Button("Add Workout") {
-                    let newWorkout = Workout(
-                        workoutType: workoutType,
-                        sets: sets,
-                        reps: reps,
-                        equipment: equipment,
-                        weight: weight,
-                        notes: notes
-                    )
-                    saveWorkoutDataStore.addWorkout(newWorkout)
-                }
+                let newWorkout = Workout(
+                    workoutType: workoutType,
+                    sets: sets,
+                    reps: reps,
+                    equipment: equipment,
+                    weight: weight,
+                    notes: notes
+                )
+                saveWorkoutDataStore.addWorkout(newWorkout)
+            }
             .accessibility(identifier: "Add Workout")
             .onTapGesture {
                 withAnimation(Animation.easeInOut(duration: 1).delay(1)) {
@@ -118,6 +113,7 @@ struct AddWorkoutView: View {
             .padding(buttonPadding)
         }
         .padding(mainPadding)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
