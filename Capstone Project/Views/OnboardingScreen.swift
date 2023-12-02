@@ -43,6 +43,8 @@ struct OnboardingScreen: View {
                 Button("Get Started") {
                     showOnboarding = false
                 }
+                .id("myButtonIdentifier")
+                .accessibilityIdentifier("myButtonIdentifier")
                 .foregroundColor(.white)
                 .frame(width: 250)
                 .padding()
