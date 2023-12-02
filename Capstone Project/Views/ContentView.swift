@@ -27,11 +27,11 @@ struct ContentView: View {@State private var selectedTab: Tab = .tab1
             NavigationView {
                 SearchExerciseLibrary()
             }
-                .tag(Tab.tab3)
-                .tabItem {
-                    Label("Library", systemImage: "books.vertical.circle")
-                        .font(.custom("Avenir.bold", size: 22))
-                }
+            .tag(Tab.tab3)
+            .tabItem {
+                Label("Library", systemImage: "books.vertical.circle")
+                    .font(.custom("Avenir.bold", size: 22))
+            }
             
             WorkoutHistoryView()
                 .tag(Tab.tab4)
@@ -39,6 +39,7 @@ struct ContentView: View {@State private var selectedTab: Tab = .tab1
                     Label("History", systemImage: "clock.arrow.circlepath")
                         .font(.custom("Avenir.bold", size: 22))
                 }
+                .accessibilityIdentifier("workoutHistoryView")
         }
         .accentColor(mainColor)
     }

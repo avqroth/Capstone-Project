@@ -11,11 +11,11 @@ struct ExerciseDetailView: View {
     let exercise: ExerciseEntry
     let mainColor = Color("MainColor")
     let detailsColor = Color("DetailsColor")
-
+    
     private let detailFontSize = Double(20.0)
     private let detailFont = String("Avenir")
     private let detailPadding = Double(20.0)
-
+    
     var body: some View {
         ScrollView {
             Image(systemName: "dumbbell")
@@ -23,13 +23,13 @@ struct ExerciseDetailView: View {
                 .font(.system(size: 150))
                 .padding()
             Text("\(exercise.name)")
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(mainColor)
-                    .font(.custom(detailFont, size: 30))
-                    .padding()
-                    .background(detailsColor)
-                    .cornerRadius(50)
-                    .padding()
+                .multilineTextAlignment(.center)
+                .foregroundColor(mainColor)
+                .font(.custom(detailFont, size: 30))
+                .padding()
+                .background(detailsColor)
+                .cornerRadius(50)
+                .padding()
             ZStack {
                 RectangleView()
                 VStack(alignment: .center) {
@@ -37,17 +37,17 @@ struct ExerciseDetailView: View {
                         .foregroundColor(detailsColor)
                         .font(.custom(detailFont, size: detailFontSize))
                         .padding(detailPadding)
-
+                    
                     Label(exercise.type, systemImage: "figure.strengthtraining.traditional")
                         .foregroundColor(detailsColor)
                         .font(.custom(detailFont, size: detailFontSize))
                         .padding(detailPadding)
-
+                    
                     Label(exercise.equipment, systemImage: "dumbbell")
                         .foregroundColor(detailsColor)
                         .font(.custom(detailFont, size: detailFontSize))
                         .padding(detailPadding)
-
+                    
                     Label(exercise.muscle, systemImage: "figure.stand")
                         .foregroundColor(detailsColor)
                         .font(.custom(detailFont, size: detailFontSize))

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchExerciseLibrary: View {
     @ObservedObject var exerciseStore = ExerciseStore()
-
+    
     @State var selectedMuscle: MuscleGroup = .abdominals
     @State var selectedDifficulty: Difficulty = .beginner
     @State var isFetchingData = false
@@ -18,10 +18,10 @@ struct SearchExerciseLibrary: View {
     @State private var showAlert = false
     @State private var alertMessage = ""
     @State private var alertTitle = "Error Fetching Exercises"
-
+    
     let mainColor = Color("MainColor")
     let detailsColor = Color("DetailsColor")
-
+    
     var body: some View {
         VStack {
             Spacer()
@@ -31,7 +31,7 @@ struct SearchExerciseLibrary: View {
                         Text($0.rawValue.capitalized)
                     }
                 }
-
+                
                 Picker("Difficulty", selection: $selectedDifficulty) {
                     ForEach(Difficulty.allCases, id: \.self) {
                         Text($0.rawValue.capitalized)
@@ -42,7 +42,7 @@ struct SearchExerciseLibrary: View {
                 RoundedRectangle(cornerRadius: 50)
                     .stroke(mainColor, lineWidth: 2)
             )
-
+            
             HStack {
                 Button(action: {
                     Task {
@@ -76,14 +76,14 @@ struct SearchExerciseLibrary: View {
                 }
                 .accessibility(identifier: "Search")
             }.padding()
-
+            
             if isFetchingData {
                 ProgressView("Fetching Exercises...")
                     .accessibility(identifier: "loadingIndicator")
                     .progressViewStyle(CircularProgressViewStyle())
                     .padding()
             }
-
+            
             List(exerciseStore.exercises.indices, id: \.self) { index in
                 NavigationLink(destination: ExerciseDetailView(exercise: exerciseStore.exercises[index])) {
                     Image(systemName: "dumbbell")
@@ -102,7 +102,7 @@ struct SearchExerciseLibrary: View {
                 }
         }
     }
-
+    
     func handleError(_ error: CapstoneError) {
         switch error {
         case .network:

@@ -11,12 +11,15 @@
 		855D05582B03C7E600FF1CD9 /* SearchExerciseLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */; };
 		855D055A2B03C7F800FF1CD9 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */; };
 		855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */; };
-		855D058F2B14977400FF1CD9 /* WorkoutHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D058E2B14977400FF1CD9 /* WorkoutHistory.swift */; };
+		855D058F2B14977400FF1CD9 /* WorkoutHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D058E2B14977400FF1CD9 /* WorkoutHistoryView.swift */; };
 		855D05912B149B8300FF1CD9 /* SaveWorkoutDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */; };
 		855D05942B1684C200FF1CD9 /* CapstoneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D05932B1684C200FF1CD9 /* CapstoneError.swift */; };
 		855D05982B19250F00FF1CD9 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 855D05972B19250F00FF1CD9 /* APIKeys.plist */; };
 		855D05A02B1971C000FF1CD9 /* LogFlex_Project_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D059F2B1971C000FF1CD9 /* LogFlex_Project_Tests.swift */; };
 		855D05B72B19912E00FF1CD9 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 855D05B62B19912E00FF1CD9 /* testData.json */; };
+		858919392B1A0EFA000596D0 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858919382B1A0EFA000596D0 /* PageModel.swift */; };
+		858919462B1A7361000596D0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858919452B1A7361000596D0 /* Launch Screen.storyboard */; };
+		8589194C2B1ACBD7000596D0 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589194B2B1ACBD7000596D0 /* OnboardingScreen.swift */; };
 		858BFC8C2B0160690077F475 /* Log_FlexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8B2B0160690077F475 /* Log_FlexApp.swift */; };
 		858BFC8E2B0160690077F475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BFC8D2B0160690077F475 /* ContentView.swift */; };
 		858BFC902B0160710077F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858BFC8F2B0160710077F475 /* Assets.xcassets */; };
@@ -47,7 +50,7 @@
 		855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExerciseLibrary.swift; sourceTree = "<group>"; };
 		855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
-		855D058E2B14977400FF1CD9 /* WorkoutHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistory.swift; sourceTree = "<group>"; };
+		855D058E2B14977400FF1CD9 /* WorkoutHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryView.swift; sourceTree = "<group>"; };
 		855D05902B149B8300FF1CD9 /* SaveWorkoutDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWorkoutDataStore.swift; sourceTree = "<group>"; };
 		855D05932B1684C200FF1CD9 /* CapstoneError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneError.swift; sourceTree = "<group>"; };
 		855D05972B19250F00FF1CD9 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
@@ -56,6 +59,10 @@
 		855D05AA2B19728600FF1CD9 /* LogFlex UIProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LogFlex UIProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D05B62B19912E00FF1CD9 /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
 		858919312B19FBB8000596D0 /* Log Flex.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Log Flex.xctestplan"; sourceTree = "<group>"; };
+		858919382B1A0EFA000596D0 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		8589193E2B1A2771000596D0 /* Capstone-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Capstone-Project-Info.plist"; sourceTree = "<group>"; };
+		858919452B1A7361000596D0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8589194B2B1ACBD7000596D0 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		858BFC882B0160690077F475 /* Capstone Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Capstone Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858BFC8B2B0160690077F475 /* Log_FlexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log_FlexApp.swift; sourceTree = "<group>"; };
 		858BFC8D2B0160690077F475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +136,7 @@
 			children = (
 				858919312B19FBB8000596D0 /* Log Flex.xctestplan */,
 				855D05972B19250F00FF1CD9 /* APIKeys.plist */,
+				8589193E2B1A2771000596D0 /* Capstone-Project-Info.plist */,
 				858BFC9A2B0162D30077F475 /* Views */,
 				855D05922B1684AB00FF1CD9 /* Errors */,
 				858BFC992B0162740077F475 /* Model */,
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				85BD9ABE2B0164420072A846 /* ExerciseModel.swift */,
+				858919382B1A0EFA000596D0 /* PageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,7 +192,9 @@
 				855D05572B03C7E600FF1CD9 /* SearchExerciseLibrary.swift */,
 				855D055E2B03E89300FF1CD9 /* ExerciseDetailView.swift */,
 				855D05592B03C7F800FF1CD9 /* AddWorkoutView.swift */,
-				855D058E2B14977400FF1CD9 /* WorkoutHistory.swift */,
+				855D058E2B14977400FF1CD9 /* WorkoutHistoryView.swift */,
+				8589194B2B1ACBD7000596D0 /* OnboardingScreen.swift */,
+				858919452B1A7361000596D0 /* Launch Screen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +322,7 @@
 			files = (
 				855D05982B19250F00FF1CD9 /* APIKeys.plist in Resources */,
 				858BFC932B0160710077F475 /* Preview Assets.xcassets in Resources */,
+				858919462B1A7361000596D0 /* Launch Screen.storyboard in Resources */,
 				858BFC902B0160710077F475 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,13 +371,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858919392B1A0EFA000596D0 /* PageModel.swift in Sources */,
 				85BD9AC32B0164FF0072A846 /* ExerciseStore.swift in Sources */,
 				855D055F2B03E89300FF1CD9 /* ExerciseDetailView.swift in Sources */,
 				858BFC8E2B0160690077F475 /* ContentView.swift in Sources */,
-				855D058F2B14977400FF1CD9 /* WorkoutHistory.swift in Sources */,
+				855D058F2B14977400FF1CD9 /* WorkoutHistoryView.swift in Sources */,
 				85BD9ABF2B0164420072A846 /* ExerciseModel.swift in Sources */,
 				855D05582B03C7E600FF1CD9 /* SearchExerciseLibrary.swift in Sources */,
 				855D055A2B03C7F800FF1CD9 /* AddWorkoutView.swift in Sources */,
+				8589194C2B1ACBD7000596D0 /* OnboardingScreen.swift in Sources */,
 				855D05912B149B8300FF1CD9 /* SaveWorkoutDataStore.swift in Sources */,
 				858BFC8C2B0160690077F475 /* Log_FlexApp.swift in Sources */,
 				855D05942B1684C200FF1CD9 /* CapstoneError.swift in Sources */,
@@ -589,10 +603,11 @@
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capstone-Project-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LogFlex;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -620,10 +635,11 @@
 				DEVELOPMENT_TEAM = N5QSZU8WS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Capstone-Project-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LogFlex;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

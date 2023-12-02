@@ -5,7 +5,7 @@ struct AddWorkoutView: View {
     let mainColor = Color("MainColor")
     let detailsColor = Color("DetailsColor")
     let textFieldColor = Color("TextFieldColor")
-
+    
     @State private var workoutType: String = ""
     @State private var sets: String = ""
     @State private var reps: String = ""
@@ -14,9 +14,9 @@ struct AddWorkoutView: View {
     @State private var notes: String = ""
     @State private var isButtonHighlighted = false
     @State private var isSavingWorkout = false
-
+    
     @ObservedObject var saveWorkoutDataStore = SaveWorkoutData()
-
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -32,7 +32,7 @@ struct AddWorkoutView: View {
                 }
                 .frame(height: 50)
                 .padding()
-
+                
                 TextField("  Workout Type", text: $workoutType)
                     .font(.custom("Avenir", size: textFieldFontSize))
                     .padding()
@@ -41,7 +41,7 @@ struct AddWorkoutView: View {
                         RoundedRectangle(cornerRadius: textFieldCornerRadius)
                             .foregroundColor(textFieldColor))
                     .padding()
-
+                
                 TextField("  Sets", text: $sets)
                     .font(.custom("Avenir", size: textFieldFontSize))
                     .padding()
@@ -50,7 +50,7 @@ struct AddWorkoutView: View {
                         RoundedRectangle(cornerRadius: textFieldCornerRadius)
                             .foregroundColor(textFieldColor))
                     .padding()
-
+                
                 TextField("  Reps", text: $reps)
                     .font(.custom("Avenir", size: textFieldFontSize))
                     .padding()
@@ -59,7 +59,7 @@ struct AddWorkoutView: View {
                         RoundedRectangle(cornerRadius: textFieldCornerRadius)
                             .foregroundColor(textFieldColor))
                     .padding()
-
+                
                 TextField("  Equipment", text: $equipment)
                     .font(.custom("Avenir", size: textFieldFontSize))
                     .padding()
@@ -68,7 +68,7 @@ struct AddWorkoutView: View {
                         RoundedRectangle(cornerRadius: textFieldCornerRadius)
                             .foregroundColor(textFieldColor))
                     .padding()
-
+                
                 TextField("  Weights", text: $weight)
                     .font(.custom("Avenir", size: textFieldFontSize))
                     .padding()
@@ -77,7 +77,7 @@ struct AddWorkoutView: View {
                         RoundedRectangle(cornerRadius: textFieldCornerRadius)
                             .foregroundColor(textFieldColor))
                     .padding()
-
+                
                 TextField("  Notes", text: $notes, axis: .vertical)
                     .lineLimit(5...)
                     .font(.custom("Avenir", size: textFieldFontSize))
@@ -88,7 +88,7 @@ struct AddWorkoutView: View {
                             .foregroundColor(textFieldColor))
                     .padding()
             }
-
+            
             Button("Add Workout") {
                 let newWorkout = Workout(
                     workoutType: workoutType,
