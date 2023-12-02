@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Capstone_ProjectApp: App {
+    @AppStorage("showOnboarding") private var showOnboarding: Bool = true
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if showOnboarding {
+                OnboardingScreen()
+            } else {
+                ContentView()
+            }
         }
     }
 }
